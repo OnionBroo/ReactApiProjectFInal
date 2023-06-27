@@ -1,0 +1,15 @@
+.main-div {
+    display: flex;
+    margin-top: 90px;
+    margin-left: 30px;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.col-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
