@@ -1,6 +1,6 @@
-const Users = () => {
+const getUsers = () => {
     const promise = new Promise((resolve, reject) =>{
-        fetch('https://random-data-api.com/api/v2/users?size=100')
+        fetch('https://random-data-api.com/api/v2/users?size=28')
         .then((usersJSON)=>{
             const usersData = usersJSON.json()
             resolve(usersData)
@@ -11,4 +11,4 @@ const Users = () => {
     })
     return promise 
 }
-export default Users
+export  {getUsers}
