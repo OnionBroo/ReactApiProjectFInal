@@ -1,15 +1,70 @@
 .main-div {
     display: flex;
-    margin-top: 90px;
+    margin-top: 30px;
     margin-left: 30px;
     flex-direction: row;
     align-items: start;
     flex-wrap: wrap;
 }
+
 .col-post {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: start;
 }
-    
+
+.bg {
+    background-color: rgb(228, 228, 228);
+}
+
+.card {
+    transition: background-color .3s;
+
+}
+
+.card:hover {
+    background-color: rgb(158, 158, 158);
+    color: rgb(255, 255, 255);
+
+    .icon-user {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+    background-color: rgba(158, 158, 158, 0.658);
+    text-align: center;
+
+
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.nav-item {
+    transition: background-color .3s;
+}
+
+.nav-item:hover {
+    background-color: rgb(158, 158, 158);
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.card-img-top {
+    object-fit: cover;
+}

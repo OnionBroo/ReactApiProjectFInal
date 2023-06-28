@@ -21,8 +21,8 @@ const LateralBar = () => {
 
     return (
         <>
-        
-            <div className="card border-0 " style={{width: "13rem"}}>
+
+            <div className="card border-0 " style={{ width: "13rem" }}>
                 <img src={shiba} className="img-fluid rounded-1 card-img-top  p-1" />
                 <div className="card-body">
                     <p className="card-text">Shiba Random</p>

@@ -3,20 +3,29 @@ import PropTypes from "prop-types";
 
 const PostCard = (props) => {
     return (
-       <>
-        <div className="col-post">
-       <div className="card mt-2 ms-4 border-0 bg-body-tertiary" style={{ width: "14rem" }}>
-             <img src={props.webformatURL} className="card-img-top" alt="..." />
-            <div className="card-body">
-                <a className="navbar-brand" href="#">
-                    <img src={props.avatar} alt="Logo" width="30" height="30" className="d-inline-block align-text-top me-2 mb-1" />
-                    {props.username}</a>
-            </div>
-        </div>
-                   
-                    
-        </div>
-       </>
+        <>
+
+            <NavLink className="text-decoration-none col-post mt-3 card ms-4 border-0 rounded-3 bg" to={"/aboutApi"} style={{ width: "14rem" }}>
+                <div className="m-0  box rounded-top-3">
+                    <img src={props.webformatURL} width="300" height="400" className="card-img-top rounded-top-3  " alt="..." />
+                    <div className="overlay rounded-3 align-items-center">
+                        <p className="p-5 ">Ir al post
+                            <span className="material-symbols-outlined">
+                                open_in_new
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div className="card-body pt-2 pb-2">
+                    <a className="navbar-brand" href="#">
+                        <img src={props.avatar} alt="Logo" width="30" height="30" className="inline-block rounded-5  align-text-top icon-user me-2 " />
+                        {props.username}</a>
+                </div>
+            </NavLink>
+
+
+
+        </>
     )
 }
 
@@ -27,4 +36,4 @@ PostCard.propTypes = {
     tags: PropTypes.string
 }
 
-export default  PostCard
+export default PostCard

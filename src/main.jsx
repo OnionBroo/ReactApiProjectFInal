@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './view/home'
 import Apis from './view/aboutApi'
 import Users from './view/users'
+import Post from './view/Post'
 
 const myConfigureRoute = createBrowserRouter([
   {
@@ -11,12 +12,16 @@ const myConfigureRoute = createBrowserRouter([
     element: <Home />
   },
   {
-    path: 'aboutApi',
+    path: '/aboutApi',
     element: <Apis />
   },
   {
-    path: 'users',
+    path: '/users',
     element: <Users />
+  },
+  {
+    path: '/post/:id',
+    element: <Post />
   },
 ])
 
