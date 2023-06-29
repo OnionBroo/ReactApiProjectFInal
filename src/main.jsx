@@ -5,23 +5,29 @@ import Home from './view/home'
 import Apis from './view/aboutApi'
 import Users from './view/users'
 import Post from './view/Post'
+import Error from './view/Error'
+
 
 const myConfigureRoute = createBrowserRouter([
   {
     path: '/',
-    element: <Home />
+    element: <Home />,
+    errorElement: <Error/>
   },
   {
     path: '/aboutApi',
-    element: <Apis />
+    element: <Apis />,
+    errorElement: <Error/>
   },
   {
     path: '/users',
-    element: <Users />
+    element: <Users />,
+    errorElement: <Error/>
   },
   {
     path: '/post/:id',
-    element: <Post />
+    element: <Post />,
+    errorElement: <Error/>
   },
 ])
 

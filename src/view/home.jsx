@@ -24,19 +24,18 @@ const Home = () => {
         }
     }
 
-
-
     useEffect(() => {
         getDataFromApis()
     }, [])
-
 
     const renderUser = () => {
         if (userPost.length > 0) {
             if (pixiImage.length > 0) {
                 const userPostHTML = userPost.map((post, indice) => {
+                        
                     return (
                         <PostCard
+                            
                             webformatURL={pixiImage[indice].download_url
                             }
                             avatar={post.avatar}
@@ -59,12 +58,12 @@ const Home = () => {
     return (
         <>
             <NavMenu />
-            <div className="container text-center mt-5">
+            <div className="container mb-56 text-center mt-5">
                 <div className="row align-items-center">
                     <h1 className="col">Imágenes y Usuarios</h1>
                 </div>
                 <div className="row align-items-center">
-                    <p className="col mt-3">Discover food and drink on Pinterest for every occasion and any meal of the day. </p>
+                    <p className="col mt-3">Proyecto para la Desgraduación, utlizando React, una Api y Bootstrap. </p>
                 </div>
             </div>
             <div className="main-div">
@@ -73,4 +72,7 @@ const Home = () => {
         </>
     )
 }
+
+
+
 export default Home

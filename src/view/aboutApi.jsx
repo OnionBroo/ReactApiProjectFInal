@@ -1,5 +1,5 @@
 import NavMenu from "../components/Navbar"
-
+import '../components/index.css'
 
 
 const Apis = () =>{

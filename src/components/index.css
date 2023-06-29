@@ -22,15 +22,24 @@
     transition: background-color .3s;
 
 }
-
-.card:hover {
-    background-color: rgb(158, 158, 158);
+.list-group-item{
+    background-color: rgb(133, 133, 133);
     color: rgb(255, 255, 255);
-
-    .icon-user {
-        background-color: rgb(255, 255, 255);
-    }
 }
+.icon-user {
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(112, 112, 112);
+}
+
+
+.icon-user {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
 
 .overlay {
     position: absolute;
