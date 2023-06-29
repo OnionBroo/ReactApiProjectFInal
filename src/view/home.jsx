@@ -1,26 +1,30 @@
 import { useEffect, useState } from "react"
-import { getImagePixi } from "../API/loremPicsum"
+import { getImagePicsum } from "../API/loremPicsum"
 import { getUsers } from "../API/randomDataUser"
 import NavMenu from "../components/Navbar"
 import '../components/index.css'
 import PostCard from "../components/postCard"
-
+import Footer from "../components/footer"
 
 
 const Home = () => {
 
     const [userPost, setUserPost] = useState([])
-    const [pixiImage, setPixiImage] = useState([])
+    const [picsumImage, setPixiImage] = useState([])
 
     const getDataFromApis = async () => {
         try {
             const users = await getUsers();
             setUserPost(users)
-            const image = await getImagePixi();
+            const image = await getImagePicsum();
             setPixiImage(image)
 
         } catch (error) {
-            console.log(error)
+            return (
+                <>
+                    <h1>{error}</h1>
+                </>
+            )
         }
     }
 
@@ -30,13 +34,15 @@ const Home = () => {
 
     const renderUser = () => {
         if (userPost.length > 0) {
-            if (pixiImage.length > 0) {
+            if (picsumImage.length > 0) {
                 const userPostHTML = userPost.map((post, indice) => {
-                        
+
                     return (
                         <PostCard
-                            
-                            webformatURL={pixiImage[indice].download_url
+                            idPost={picsumImage[indice].id}
+                            idWidth={picsumImage[indice].width}
+                            idHeight={picsumImage[indice].height}
+                            webformatURL={picsumImage[indice].download_url
                             }
                             avatar={post.avatar}
                             username={post.username}
@@ -48,7 +54,9 @@ const Home = () => {
                 })
                 return userPostHTML
             } else {
-                return console.log("error")
+                return (
+                    <h4>cargando contenido</h4>
+                )
             }
 
         }
@@ -69,6 +77,7 @@ const Home = () => {
             <div className="main-div">
                 {renderUser()}
             </div>
+            <Footer />
         </>
     )
 }

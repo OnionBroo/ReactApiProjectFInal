@@ -16,13 +16,13 @@ const NavMenu = () => {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item rounded-5 ms-1">
-                                <NavLink className={"nav-link"} to={"/"}>Home</NavLink>
-                            </li>
-                            <li className="nav-item rounded-5 ms-1">
-                                <NavLink className={"nav-link"} to={"/aboutApi"}>About API</NavLink>
+                                <NavLink className={"nav-link"} to={"/"}>Inicio</NavLink>
                             </li>
                             <li className="nav-item rounded-5 ms-1">
                                 <NavLink className={"nav-link"} to={"/users"}>Encontrar Usuarios</NavLink>
+                            </li>
+                            <li className="nav-item rounded-5 ms-1">
+                                <NavLink className={"nav-link"} to={"/aboutApi"}>API</NavLink>
                             </li>
                         </ul>
                     </div>

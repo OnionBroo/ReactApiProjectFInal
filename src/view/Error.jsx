@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom"
 import NavMenu from "../components/Navbar"
 import '../components/index.css'
+import Footer from "../components/footer"
+
 
 const Error = () => {
     return (
@@ -16,6 +18,7 @@ const Error = () => {
                     <p className="col mt-3">Esta página no existe ¿Quieres volver al inicio? <NavLink to={"/"} className={"text-decoration-none text-dark text-decoration-underline"}>click</NavLink> </p>
                 </div>
             </div>
+            <Footer />
 
         </>
     )

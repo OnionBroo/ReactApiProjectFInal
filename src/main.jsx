@@ -25,7 +25,7 @@ const myConfigureRoute = createBrowserRouter([
     errorElement: <Error/>
   },
   {
-    path: '/post/:id',
+    path: '/post/:id/:width/:height',
     element: <Post />,
     errorElement: <Error/>
   },

@@ -16,9 +16,9 @@ const UserCard = (props) => {
                 <div className="card-body pt-2 pb-2">
                     <h1 className="navbar-brand" href="#">{props.username}</h1>
                     <ul className="list-group list-group-flush border-0 bg">
-                        <li className="list-group-item rounded-5 mb-1 border-0">{props.first_name}</li>
+                        <li className="list-group-item rounded-5 mb-1 border-0">Nombre: {props.first_name}</li>
                         <li className="list-group-item rounded-5 mb-1 border-0">{props.email}</li>
-                        <li className="list-group-item rounded-5 mb-1 border-0">{props.phone_number}</li>
+                        <li className="list-group-item rounded-5 mb-1 border-0">Teléfono: {props.phone_number}</li>
                     </ul>
                 </div>
             </NavLink>
