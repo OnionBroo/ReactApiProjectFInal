@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
 import { getImagePicsum } from "../API/loremPicsum"
 import { getUsers } from "../API/randomDataUser"
-import NavMenu from "../components/Navbar"
+
 import '../components/index.css'
 import PostCard from "../components/postCard"
 import Footer from "../components/footer"
+import NavMenu from "../components/Navbar"
 
 
 const Home = () => {
