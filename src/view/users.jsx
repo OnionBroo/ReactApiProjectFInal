@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
 import { getUsers } from "../API/randomDataUser"
-import NavMenu from "../components/Navbar"
+
 import '../components/index.css'
 import SearchBar from "../components/searchbar"
 import UserCard from "../components/userCard"
 import Footer from "../components/footer"
+import NavMenu from "../components/Navbar"
 
 
 const Users = () => {

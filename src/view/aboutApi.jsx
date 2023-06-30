@@ -1,3 +1,4 @@
+
 import NavMenu from "../components/Navbar"
 import Footer from "../components/footer"
 import '../components/index.css'
