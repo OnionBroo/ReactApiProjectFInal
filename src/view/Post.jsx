@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import NavMenu from "../components/Navbar"
+import NavMenu from "../components/navbar"
 import '../components/index.css'
 import { useEffect, useState } from "react";
 import PostCardPage from "../components/postCardView";

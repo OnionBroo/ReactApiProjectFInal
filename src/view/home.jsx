@@ -5,7 +5,7 @@ import { getUsers } from "../API/randomDataUser"
 import '../components/index.css'
 import PostCard from "../components/postCard"
 import Footer from "../components/footer"
-import NavMenu from "../components/Navbar"
+import NavMenu from "../components/navbar"
 
 
 const Home = () => {

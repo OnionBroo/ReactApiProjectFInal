@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 
 import '../components/index.css'
 import Footer from "../components/footer"
-import NavMenu from "../components/Navbar"
+import NavMenu from "../components/navbar"
 
 
 const Error = () => {

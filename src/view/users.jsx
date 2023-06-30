@@ -5,7 +5,7 @@ import '../components/index.css'
 import SearchBar from "../components/searchbar"
 import UserCard from "../components/userCard"
 import Footer from "../components/footer"
-import NavMenu from "../components/Navbar"
+import NavMenu from "../components/navbar"
 
 
 const Users = () => {

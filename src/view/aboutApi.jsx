@@ -1,5 +1,5 @@
 
-import NavMenu from "../components/Navbar"
+import NavMenu from "../components/navbar"
 import Footer from "../components/footer"
 import '../components/index.css'
 
